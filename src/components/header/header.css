@@ -1,0 +1,43 @@
+.header-section .header-right-side ul li .active {
+    transition: all .3s ease-in-out;
+}
+
+.header-section .header-right-side ul li .active:hover {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 991px) {
+    .header-section .header-right-side ul {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .header-section .navbar-brand img {
+        width: 120px;
+    }
+
+    .header-section .header-right-side ul li .active {
+        font-size: 14px;
+    }
+
+    .header-section .header-right-side ul li .nav-link button {
+        font-size: 14px;
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 381px) {
+    .header-section .navbar-brand img {
+        width: 100px;
+    }
+
+    .header-section .header-right-side ul li .active {
+        font-size: 12px;
+    }
+
+    .header-section .header-right-side ul li .nav-link button {
+        font-size: 12px;
+        width: 60px;
+    }
+}

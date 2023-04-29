@@ -1,0 +1,36 @@
+section.hero-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/src/assets/navbar-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 910px;
+}
+
+.hero-section .hero-container {
+    padding-top: 150px;
+}
+
+.hero-section .body-text {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-section .heading-text {
+        font-size: 38px;
+        line-height: 60px;
+    }
+
+    .hero-section .body-text {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero-section .heading-text {
+        font-size: 26px;
+        line-height: 50px;
+    }
+
+    .hero-section .body-text {
+        padding: 0 !important;
+    }
+}

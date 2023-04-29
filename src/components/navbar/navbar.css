@@ -1,0 +1,54 @@
+.navbar-section .navbar {
+    --bs-navbar-nav-link-padding-x: 12px;
+}
+
+.navbar-section .navbar-collapse ul li {
+    position: sticky;
+    top: 0;
+    z-index: 55;
+}
+
+.navbar-section .navbar-nav {
+    --bs-nav-link-color: var(--white-color);
+    --bs-nav-link-hover-color: var(--primary-color);
+}
+
+.navbar-section .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--primary-color);
+}
+
+.navbar-section .navbar-nav .dropdown .dropdown-menu {
+    --bs-dropdown-bg: var(--lightbg-color);
+    --bs-dropdown-link-color: var(--white-color);
+    --bs-dropdown-link-hover-color: var(--white-color);
+    --bs-dropdown-link-hover-bg: var(--primary-color);
+    --bs-dropdown-link-active-bg: var(--primary-color);
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-section .custom-navbar-container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .navbar-section .navbar {
+        padding: 0;
+    }
+
+    .navbar-section .navbar .navbar-toggler {
+        position: absolute;
+        top: -54px;
+        right: 26px;
+    }
+
+    .navbar-section .navbar-nav {
+        background: var(--lightbg-color);
+    }
+
+    .navbar-section .navbar-collapse ul {
+        padding: 0 25px;
+        padding-bottom: 15px;
+        line-height: 30px;
+    }
+}
