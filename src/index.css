@@ -72,8 +72,8 @@
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #000;
-  --bs-btn-border-color: #000;
+  --bs-btn-color: var(--black-color);
+  --bs-btn-border-color: var(--black-color);
   --bs-btn-hover-color:var(--primary-color);
   --bs-btn-hover-bg: transparent;
   --bs-btn-hover-border-color: var(--primary-color);
@@ -84,6 +84,10 @@
 
 .lh-36 {
   line-height: 36px;
+}
+
+.lh-38 {
+  line-height: 38px;
 }
 
 .lh-70 {

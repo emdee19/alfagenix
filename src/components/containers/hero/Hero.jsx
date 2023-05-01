@@ -1,11 +1,11 @@
-import { Navbar } from "../../navbar/Navbar";
+// import { Navbar } from "../../navbar/Navbar";
 import "./hero.css";
 
 export const Hero = () => {
   return (
     <>
       <section className="hero-section">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="container hero-container">
           <div className="row justify-content-center">
             <div className="col-lg-8 col-md-10 col-12">

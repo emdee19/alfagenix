@@ -2,6 +2,11 @@
     --bs-navbar-nav-link-padding-x: 12px;
 }
 
+.navbar-section .navbar-toggler {
+    box-shadow: none;
+    border: none;
+}
+
 .navbar-section .navbar-collapse ul li {
     position: sticky;
     top: 0;
@@ -50,5 +55,17 @@
         padding: 0 25px;
         padding-bottom: 15px;
         line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-section .custom-navbar-container {
+        position: relative;
+    }
+
+    .navbar-section .navbar-collapse {
+        position: absolute;
+        width: 100%;
+        top: 0;
     }
 }
