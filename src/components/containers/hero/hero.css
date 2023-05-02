@@ -3,10 +3,11 @@ section.hero-section {
     background-size: cover;
     background-position: center;
     height: 910px;
+    margin-top: -60px;
 }
 
 .hero-section .hero-container {
-    padding-top: 150px;
+    padding-top: 170px;
 }
 
 .hero-section .body-text {

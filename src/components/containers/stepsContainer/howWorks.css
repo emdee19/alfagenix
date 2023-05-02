@@ -13,11 +13,10 @@
 
 .card {
     border: none;
-    padding-top: 20px;
+    height: 100%;
+    width: 300px;
 }
 
 .card .card-img-top {
     border-radius: 1000px;
-    width: 300px;
-    margin: 0 auto;
 }

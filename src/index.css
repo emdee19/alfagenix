@@ -14,8 +14,9 @@
   --primary-color: #BB895A;
   --secondary-color: #34552F;
   --black-color: #000;
-  --lightbg-color: #00000080;
+  --lightbg-color: #000000b4;
   --white-color: #fff;
+  --bgcard-color: #FFF3E9;
 }
 
 .heading-text {
@@ -32,6 +33,10 @@
   letter-spacing: 2%;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .btn {
   font-family: 'gilroy-medium';
   border-radius: 100px;
@@ -44,6 +49,10 @@
 
 .btn-w-250 {
   width: 250px;
+}
+
+.btn-w-350 {
+  width: 350px;
 }
 
 .btn-primary {
@@ -80,6 +89,34 @@
   --bs-btn-active-color: var(--primary-color);
   --bs-btn-active-bg: transparent;
   --bs-btn-active-border-color:  var(--primary-color);
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pt-150 {
+  padding-top: 150px;
+}
+
+.lh-24 {
+  line-height: 24px;
 }
 
 .lh-36 {

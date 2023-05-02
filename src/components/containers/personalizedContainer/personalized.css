@@ -1,0 +1,40 @@
+.personalized-section {
+    padding-top: 180px;
+}
+
+.personalized-section .text-card {
+    background: var(--bgcard-color);
+    padding: 80px 180px;
+    margin-left: -80px;
+    margin-top: 69px;
+}
+
+.personalized-section .text_card-btn {
+    margin-top: 115px;
+}
+
+.personalized-section .text_card-btn .btn {
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 0;
+    transition: all .3s ease-in-out;
+}
+
+.personalized-section .text_card-btn .btn:hover {
+    color: var(--secondary-color);
+}
+
+.personalized-section .card-icons {
+    font-size: 30px;
+}
+
+.personalized_bottom-section {
+    padding-top: 180px;
+}
+
+.personalized_bottom-section img {
+    background: #F7F7F7;
+}
+
+.personalized-section .card-icons {
+    color: var(--secondary-color);
+}

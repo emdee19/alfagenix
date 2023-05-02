@@ -1,7 +1,8 @@
 .footer-section {
     background: url(/src/assets/footer-bg.png) no-repeat;
     background-size: cover;
-    padding-top: 80px;
+    padding-top: 75px;
+    margin-top: 180px;
 }
 
 .footer-section .footer-logo {

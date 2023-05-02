@@ -5,6 +5,8 @@ import { Navbar } from './components/navbar/Navbar'
 import { Hero } from './components/containers/hero/Hero'
 import Footer from './components/footer/Footer'
 import { Howworks } from './components/containers/stepsContainer/Howworks'
+import { Personalized } from './components/containers/personalizedContainer/Personalized'
+import { Health } from './components/containers/healthContainer/Health'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
       {/* CONTAINERS */}
       <Hero />
       <Howworks />
+      <Personalized />
+      <Health />
 
       {/* FOOTER */}
       <Footer />

@@ -7,7 +7,7 @@ export const Howworks = () => {
             <section className="how_works-section">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-6 text-center">
+                        <div className="col-lg-6 text-center">
                             <p className="heading-text">How it Works?</p>
                             <p className="">
                                 ALFAGENIX is a series of ONLINE PROGRAMS designed to cover and
@@ -23,7 +23,7 @@ export const Howworks = () => {
 
                     <div className="how_works-bottom-section">
                         <div className="row justify-content-center">
-                            <div className="col-7">
+                            <div className="col-lg-7">
                                 <p className="text-center heading-text">Regain Control & Reach Your Optimal Health
                                     In Three Easy Steps
                                 </p>
@@ -31,7 +31,7 @@ export const Howworks = () => {
                         </div>
 
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-md-6">
                                 <div className="step-1">
                                     <Card
                                         image="/src/assets/card-images/card-image-1.png"
@@ -44,8 +44,8 @@ export const Howworks = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-4">
-                                <div className="step-1">
+                            <div className="col-lg-4 col-md-6">
+                                <div className="step-2">
                                     <Card
                                         image="/src/assets/card-images/card-image-2.png"
                                         alt="step 2"
@@ -57,8 +57,8 @@ export const Howworks = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-4">
-                                <div className="step-1">
+                            <div className="col-lg-4 col-12">
+                                <div className="step-3">
                                     <Card
                                         image="/src/assets/card-images/card-image-3.png"
                                         alt="step 3"
