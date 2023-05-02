@@ -14,6 +14,12 @@
     color: var(--white-color);
     vertical-align: b;
     padding: 0 3px;
+    transition: all .3s ease-in-out;
+}
+
+.footer-section .footer_social-icons a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .footer-section .footer_social-icons .icons {

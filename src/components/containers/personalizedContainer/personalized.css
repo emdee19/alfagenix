@@ -21,6 +21,7 @@
 
 .personalized-section .text_card-btn .btn:hover {
     color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .personalized-section .card-icons {

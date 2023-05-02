@@ -42,7 +42,7 @@ export const Personalized = () => {
 
                     <div className="personalized_bottom-section">
                         <div className="row px-5">
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-md-6 col-12 order-2 order-lg-1">
                                 <div className="left_side-image px-4">
                                     <img
                                         src="/src/assets/personalized/faride-image.png"
@@ -70,13 +70,13 @@ export const Personalized = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-12 order-1 order-lg-2">
                                 <p className="heading-text text-center pt-150">
                                     Meet The Genius Minds Behind AlfaGenix
                                 </p>
                             </div>
 
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-md-6 col-12 order-3 order-lg-3">
                                 <div className="right_side-image px-4">
                                     <img
                                         src="/src/assets/personalized/ghods-image.png"

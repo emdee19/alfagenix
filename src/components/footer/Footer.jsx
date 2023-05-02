@@ -7,7 +7,7 @@ import { MdLocationOn, MdPermPhoneMsg, MdEmail } from "react-icons/md";
 const Footer = () => {
     return (
         <>
-            <footer className="footer-section pb-5">
+            <footer className="footer-section">
                 <div className="container">
                     <div className="row ps-3 ps-md-0">
                         <div className="col-lg-3 col-sm-12 text-center footer_first-col order-3 mt-5 mt-lg-0 order-lg-1">

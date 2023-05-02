@@ -6,7 +6,7 @@ export const Health = () => {
             <section className="health-section">
                 <div className="container">
                     <div className="row">
-                        <div className="col-4">
+                        <div className="col-xl-4 col-lg-5 col-md-8 col-12">
                             <p className="heading-text">
                                 Get Control of Yourself, Get Optimal Health Again
                             </p>
@@ -32,79 +32,48 @@ export const Health = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-4 form-container ms-4">
+                        <div className="col-lg-4 form-container ms-lg-4">
                             <form className="row g-3">
                                 <div className="col-md-6">
-                                    <label htmlFor="inputFname" className="form-label">
-                                        Password
-                                    </label>
-                                    <input type="text" className="form-control" id="name" />
-                                </div>
-                                <div className="col-md-6">
-                                    <label htmlFor="inputLname" className="form-label">
-                                        Password
-                                    </label>
-                                    <input
-                                        type="password"
-                                        className="form-control"
-                                        id="inputPassword4"
-                                    />
-                                </div>
-                                <div className="col-12">
-                                    <label htmlFor="inputAddress" className="form-label">
-                                        Address
-                                    </label>
                                     <input
                                         type="text"
                                         className="form-control"
-                                        id="inputAddress"
-                                        placeholder="1234 Main St"
-                                    />
-                                </div>
-                                <div className="col-12">
-                                    <label htmlFor="inputAddress2" className="form-label">
-                                        Address 2
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        id="inputAddress2"
-                                        placeholder="Apartment, studio, or floor"
+                                        id="Fname"
+                                        placeholder="FIRST NAME"
+                                        required
                                     />
                                 </div>
                                 <div className="col-md-6">
-                                    <label htmlFor="inputCity" className="form-label">
-                                        City
-                                    </label>
-                                    <input type="text" className="form-control" id="inputCity" />
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="Lname"
+                                        placeholder="LAST NAME"
+                                        required
+                                    />
                                 </div>
-                                <div className="col-md-4">
-                                    <label htmlFor="inputState" className="form-label">
-                                        State
-                                    </label>
+                                <div className="col-12 pt-50">
                                     <select id="inputState" className="form-select">
                                         <option value="">CHOOSE YOUR TEST KIT</option>
                                     </select>
                                 </div>
-                                <div className="col-md-2">
-                                    <label htmlFor="inputZip" className="form-label">
-                                        Zip
-                                    </label>
-                                    <input type="text" className="form-control" id="inputZip" />
+                                <div className="col-12 pt-50">
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="inputAddress2"
+                                        placeholder="PHONE NUMBER"
+                                    />
                                 </div>
-                                <div className="col-12">
-                                    <div className="form-check">
-                                        <input
-                                            className="form-check-input"
-                                            type="checkbox"
-                                            id="gridCheck"
-                                        />
-                                        <label className="form-check-label" htmlFor="gridCheck">
-                                            Check me out
-                                        </label>
-                                    </div>
+                                <div className="col-12 pt-50">
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="inputAddress2"
+                                        placeholder="EMAIL ADDRESS"
+                                    />
                                 </div>
-                                <div className="col-12 text-center">
+                                <div className="col-12 text-center pt-50">
                                     <button
                                         type="submit"
                                         className="btn btn-secondary btn-w-128 p-2"
@@ -121,17 +90,18 @@ export const Health = () => {
             <section className="bottom-section">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-9">
+                        <div className="col-xl-9">
                             <video
-                                src="/src/assets/Jaanam Fida-e-Haideri - By Sadiq Hussain - Original Official HD Kalam - 2018.mp4"
-                                className=""
+                                src="/src/assets/video.mp4"
+                                className="w-100"
                                 controls
                                 width="991"
                                 loop
                                 autoPlay
                             ></video>
                         </div>
-                        <div className="col-5 text-center">
+
+                        <div className="col-xl-5 text-center">
                             <p className="heading-text pt-30">
                                 AlfaGenix’s Hormonal Online Membership Programs
                             </p>
@@ -141,7 +111,9 @@ export const Health = () => {
                                 experts standing by to help you reach your goals!
                             </p>
                             <div className="bottom-section_btn pt-30">
-                                <button className="btn btn-outline-primary btn-w-350 p-2">Get Personalized Assessment</button>
+                                <button className="btn btn-outline-primary btn-w-350 p-2">
+                                    Get Personalized Assessment
+                                </button>
                             </div>
                         </div>
                     </div>

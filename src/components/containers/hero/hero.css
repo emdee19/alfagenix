@@ -1,9 +1,25 @@
-section.hero-section {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/src/assets/navbar-bg.png) no-repeat;
+.hero-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     background-size: cover;
     background-position: center;
-    height: 910px;
     margin-top: -60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.hero-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -999;
 }
 
 .hero-section .hero-container {
@@ -12,6 +28,12 @@ section.hero-section {
 
 .hero-section .body-text {
     margin-top: 20px;
+}
+
+@media screen and (max-width: 1399px) {
+    .hero-section {
+        margin-top: -100px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -26,6 +48,10 @@ section.hero-section {
 }
 
 @media screen and (max-width: 992px) {
+    .hero-section {
+        margin-top: 0;
+    }
+    
     .hero-section .heading-text {
         font-size: 26px;
         line-height: 50px;

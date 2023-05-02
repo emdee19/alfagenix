@@ -17,7 +17,7 @@
     background: var(--white-color);
     border: 20px solid var(--white-color);
     border-width: 10px 5px;
-    margin-top: -150px;
+    margin-top: -180px;
 
 }
 
@@ -26,6 +26,24 @@
     margin-top: 0;
     border: 2px solid var(--bgcard-color);
     padding: 20px;
+}
+
+.middle-section .form-container select {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #00000031;
+    box-shadow: none;
+}
+
+.middle-section .form-container input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #00000031;
+    box-shadow: none;
+}
+
+.middle-section .form-container input::placeholder {
+    color: var(--black-color);
 }
 
 .bottom-section {
