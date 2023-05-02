@@ -26,6 +26,7 @@
 
 .personalized-section .card-icons {
     font-size: 30px;
+    cursor: pointer;
 }
 
 .personalized_bottom-section {
