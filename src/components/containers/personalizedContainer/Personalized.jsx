@@ -1,39 +1,84 @@
+import { useState } from "react";
 import "./personalized.css";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
+const images = [
+    "/src/assets/personalized/personalized-bg.png",
+    "/src/assets/personalized/personalized-bg.png",
+    "/src/assets/personalized/personalized-bg.png",
+];
+const cards = [
+    {
+        heading: "Sexual Health",
+        subheading: "Male & Female",
+        description:
+            "The Hormone Trio provides a baseline assessment of estradiol, progesterone and testosterone.",
+    },
+    {
+        heading: "Sexual Health",
+        subheading: "Male & Female",
+        description:
+            "The Hormone Trio provides a baseline assessment of estradiol, progesterone and testosterone..",
+    },
+    {
+        heading: "Sexual Health",
+        subheading: "Male & Female",
+        description:
+            "The Hormone Trio provides a baseline assessment of estradiol, progesterone and testosterone...",
+    },
+];
+
 export const Personalized = () => {
+    const [position, setPosition] = useState(0);
+
+    const handleLeftArrowClick = () => {
+        setPosition((prevPosition) =>
+            prevPosition === 0 ? images.length - 1 : prevPosition - 1
+        );
+    };
+
+    const handleRightArrowClick = () => {
+        setPosition((prevPosition) =>
+            prevPosition === images.length - 1 ? 0 : prevPosition + 1
+        );
+    };
+
     return (
         <>
             <section className="personalized-section">
                 <div className="container">
                     <p className="heading-text">Choose Your Personalized Test Kit</p>
-                    <div className="row">
-                        <div className="col-lg-6 pt-30">
-                            <div className="image-side">
-                                <img
-                                    src="/src/assets/personalized/personalized-bg.png"
-                                    className="img-fluid"
-                                    alt=""
-                                />
+                    <div className="row justify-content-center">
+                        <div className="col-md-6 pt-30">
+                            <div className="image-side d-none d-lg-block ">
+                                <img src={images[position]} className="img-fluid" alt="" />
                             </div>
                         </div>
-                        <div className="col-lg-6 my-auto">
+
+                        <div className="col-md-6 my-auto card-side ">
                             <div className="text-card text-center">
-                                <p className="heading-text mb-0 lh-36">Sexual Health</p>
-                                <p className="fs-24 heading-text lh-36">Male & Female</p>
-                                <p className="pt-30">
-                                    The Hormone Trio provides a baseline assessment of estradiol,
-                                    progesterone and testosterone.
+                                <p className="heading-text mb-0 lh-36">
+                                    {cards[position].heading}
                                 </p>
+                                <p className="fs-24 heading-text lh-36">
+                                    {cards[position].subheading}
+                                </p>
+                                <p className="pt-30">{cards[position].description}</p>
                                 <div className="text_card-btn">
                                     <button className="btn">Get Started!</button>
                                 </div>
                             </div>
                             <div className="card-icons d-flex justify-content-center pt-4">
-                                <div className="left_arrow-icon me-5">
+                                <div
+                                    className="left_arrow-icon me-lg-5"
+                                    onClick={handleLeftArrowClick}
+                                >
                                     <BsArrowLeft />
                                 </div>
-                                <div className="right_arrow-icon me-5">
+                                <div
+                                    className="right_arrow-icon ms-5 me-lg-5"
+                                    onClick={handleRightArrowClick}
+                                >
                                     <BsArrowRight />
                                 </div>
                             </div>

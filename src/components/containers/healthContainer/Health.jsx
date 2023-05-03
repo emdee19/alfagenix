@@ -1,6 +1,44 @@
+import { useEffect, useRef, useState } from "react";
 import "./health.css";
+import { IoMdPlay } from "react-icons/io";
 
 export const Health = () => {
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [showPlayButton, setShowPlayButton] = useState(true);
+    const videoRef = useRef(null);
+
+    const togglePlay = () => {
+        if (isPlaying) {
+            videoRef.current.pause();
+        } else {
+            videoRef.current.play();
+        }
+        setIsPlaying(!isPlaying);
+        setShowPlayButton(false);
+    };
+
+    useEffect(() => {
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.target === videoRef.current) {
+                    if (entry.isIntersecting) {
+                        videoRef.current.play();
+                    } else {
+                        videoRef.current.pause();
+                    }
+                }
+            });
+        }, options);
+
+        observer.observe(videoRef.current);
+    }, []);
+
     return (
         <>
             <section className="health-section">
@@ -43,7 +81,7 @@ export const Health = () => {
                                         required
                                     />
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-6 pt-50 pt-md-0">
                                     <input
                                         type="text"
                                         className="form-control"
@@ -90,15 +128,30 @@ export const Health = () => {
             <section className="bottom-section">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-xl-9">
+                        <div className="col-xl-9 position-relative">
                             <video
                                 src="/src/assets/video.mp4"
                                 className="w-100"
-                                controls
-                                width="991"
-                                loop
-                                autoPlay
-                            ></video>
+                                ref={videoRef}
+                                onClick={togglePlay}
+                                onPause={() => {
+                                    setIsPlaying(false);
+                                    setShowPlayButton(true);
+                                }}
+                                onPlay={() => {
+                                    setIsPlaying(true);
+                                    setShowPlayButton(false);
+                                }}
+                                onEnded={() => {
+                                    setIsPlaying(false);
+                                    setShowPlayButton(true);
+                                }}
+                            />
+                            {showPlayButton && (
+                                <div className="play-pause-button" onClick={togglePlay}>
+                                    <IoMdPlay />
+                                </div>
+                            )}
                         </div>
 
                         <div className="col-xl-5 text-center">

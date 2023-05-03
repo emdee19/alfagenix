@@ -49,3 +49,13 @@
 .bottom-section {
     padding-top: 180px;
 }
+
+.bottom-section .play-pause-button {
+    color: var(--white-color);
+    font-size: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}

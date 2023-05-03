@@ -40,3 +40,17 @@
 .personalized-section .card-icons {
     color: var(--secondary-color);
 }
+
+@media screen and (max-width: 991px) {
+    .personalized-section .card-side .text-card {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/src//assets//personalized/personalized-bg.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: var(--white-color);
+        margin: 0;
+    }
+
+    .personalized-section .card-side .text-card .btn {
+        color: var(--white-color);
+    }
+}
