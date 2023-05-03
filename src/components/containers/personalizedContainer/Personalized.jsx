@@ -4,7 +4,7 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 const images = [
     "/src/assets/personalized/personalized-bg.png",
-    "/src/assets/personalized/personalized-bg.png",
+    "/src/assets/personalized/personalized-bg2.png",
     "/src/assets/personalized/personalized-bg.png",
 ];
 const cards = [
@@ -15,7 +15,7 @@ const cards = [
             "The Hormone Trio provides a baseline assessment of estradiol, progesterone and testosterone.",
     },
     {
-        heading: "Sexual Health",
+        heading: "Hormone Replacement",
         subheading: "Male & Female",
         description:
             "The Hormone Trio provides a baseline assessment of estradiol, progesterone and testosterone..",
@@ -49,13 +49,13 @@ export const Personalized = () => {
                 <div className="container">
                     <p className="heading-text">Choose Your Personalized Test Kit</p>
                     <div className="row justify-content-center">
-                        <div className="col-md-6 pt-30">
+                        <div className="col-lg-6 pt-30">
                             <div className="image-side d-none d-lg-block ">
                                 <img src={images[position]} className="img-fluid" alt="" />
                             </div>
                         </div>
 
-                        <div className="col-md-6 my-auto card-side ">
+                        <div className="col-lg-6 my-auto card-side">
                             <div className="text-card text-center">
                                 <p className="heading-text mb-0 lh-36">
                                     {cards[position].heading}
@@ -87,7 +87,7 @@ export const Personalized = () => {
 
                     <div className="personalized_bottom-section">
                         <div className="row px-5">
-                            <div className="col-lg-4 col-md-6 col-12 order-2 order-lg-1">
+                            <div className="col-lg-4 col-md-6 col-12 order-2 order-lg-1 pt-3 pt-md-0">
                                 <div className="left_side-image px-4">
                                     <img
                                         src="/src/assets/personalized/faride-image.png"
@@ -121,7 +121,7 @@ export const Personalized = () => {
                                 </p>
                             </div>
 
-                            <div className="col-lg-4 col-md-6 col-12 order-3 order-lg-3">
+                            <div className="col-lg-4 col-md-6 col-12 order-3 order-lg-3 pt-5 pt-md-0">
                                 <div className="right_side-image px-4">
                                     <img
                                         src="/src/assets/personalized/ghods-image.png"

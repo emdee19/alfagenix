@@ -42,7 +42,7 @@ export const Navbar = () => {
                                     >
                                         Hormonal Optimization
                                     </a>
-                                    <ul className="dropdown-menu">
+                                    <ul className="dropdown-menu sub-dropdown">
                                         <li>
                                             <a className="dropdown-item" href="#">
                                                 Action
@@ -52,9 +52,6 @@ export const Navbar = () => {
                                             <a className="dropdown-item" href="#">
                                                 Another action
                                             </a>
-                                        </li>
-                                        <li>
-                                            <hr className="dropdown-divider" />
                                         </li>
                                         <li>
                                             <a className="dropdown-item" href="#">
@@ -73,7 +70,7 @@ export const Navbar = () => {
                                     >
                                         Men’s Sexual Health
                                     </a>
-                                    <ul className="dropdown-menu">
+                                    <ul className="dropdown-menu sub-dropdown">
                                         <li>
                                             <a className="dropdown-item" href="#">
                                                 Action
@@ -83,9 +80,6 @@ export const Navbar = () => {
                                             <a className="dropdown-item" href="#">
                                                 Another action
                                             </a>
-                                        </li>
-                                        <li>
-                                            <hr className="dropdown-divider" />
                                         </li>
                                         <li>
                                             <a className="dropdown-item" href="#">
@@ -104,7 +98,7 @@ export const Navbar = () => {
                                     >
                                         Women’s Sexual Health
                                     </a>
-                                    <ul className="dropdown-menu">
+                                    <ul className="dropdown-menu sub-dropdown">
                                         <li>
                                             <a className="dropdown-item" href="#">
                                                 Action
@@ -114,9 +108,6 @@ export const Navbar = () => {
                                             <a className="dropdown-item" href="#">
                                                 Another action
                                             </a>
-                                        </li>
-                                        <li>
-                                            <hr className="dropdown-divider" />
                                         </li>
                                         <li>
                                             <a className="dropdown-item" href="#">
@@ -135,7 +126,7 @@ export const Navbar = () => {
                                     >
                                         Membership Programs
                                     </a>
-                                    <ul className="dropdown-menu">
+                                    <ul className="dropdown-menu sub-dropdown">
                                         <li>
                                             <a className="dropdown-item" href="#">
                                                 Action
@@ -145,9 +136,6 @@ export const Navbar = () => {
                                             <a className="dropdown-item" href="#">
                                                 Another action
                                             </a>
-                                        </li>
-                                        <li>
-                                            <hr className="dropdown-divider" />
                                         </li>
                                         <li>
                                             <a className="dropdown-item" href="#">

@@ -20,3 +20,17 @@
 .card .card-img-top {
     border-radius: 1000px;
 }
+
+@media screen and (max-width: 425px) {
+    .how_works-section {
+        padding-top: 80px;
+    }
+
+    .how_works-section .heading-text {
+        line-height: 40px;
+    }
+
+    .how_works-section .how_works-bottom-section {
+        padding-top: 100px;
+    }
+}

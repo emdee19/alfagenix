@@ -7,12 +7,6 @@
     border: none;
 }
 
-.navbar-section .navbar-collapse ul li {
-    position: sticky;
-    top: 0;
-    z-index: 55;
-}
-
 .navbar-section .navbar-nav {
     --bs-nav-link-color: var(--white-color);
     --bs-nav-link-hover-color: var(--primary-color);
@@ -56,9 +50,7 @@
         padding-bottom: 15px;
         line-height: 30px;
     }
-}
 
-@media screen and (max-width: 991px) {
     .navbar-section .custom-navbar-container {
         position: relative;
     }
@@ -67,5 +59,10 @@
         position: absolute;
         width: 100%;
         top: 0;
+    }
+
+    .navbar-section .navbar-nav .dropdown .dropdown-menu.sub-dropdown {
+        position: absolute;
+        background: var(--primary-color);
     }
 }

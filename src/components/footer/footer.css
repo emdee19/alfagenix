@@ -59,7 +59,7 @@
 }
 
 .footer-section .footer_third-col a:hover,
-.footer-section .footer_third-col a:hover .info-icons { 
+.footer-section .footer_third-col a:hover .info-icons {
     color: var(--primary-color);
 }
 
@@ -78,5 +78,17 @@
 @media screen and (max-width: 575px) {
     .footer-section .footer_quick-links {
         padding-left: 0 12px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer-section {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer-section .footer-logo {
+        width: 250px;
     }
 }

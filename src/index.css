@@ -19,6 +19,10 @@
   --bgcard-color: #FFF3E9;
 }
 
+/* * {
+  border: 10px solid;
+} */
+
 .heading-text {
   font-family: 'Playfair Display', serif;
   font-size: 32px;
@@ -58,37 +62,37 @@
 .btn-primary {
   --bs-btn-color: var(--white-color);
   --bs-btn-border-color: var(--primary-color);
-  --bs-btn-hover-color:var(--white-color);
+  --bs-btn-hover-color: var(--white-color);
   --bs-btn-bg: var(--primary-color);
   --bs-btn-hover-bg: var(--secondary-color);
   --bs-btn-hover-border-color: var(--secondary-color);
   --bs-btn-active-color: var(--white-color);
   --bs-btn-active-bg: var(--secondary-color);
-  --bs-btn-active-border-color:  var(--secondary-color);
- 
+  --bs-btn-active-border-color: var(--secondary-color);
+
 }
 
 .btn-secondary {
   --bs-btn-color: var(--white-color);
   --bs-btn-border-color: var(--secondary-color);
-  --bs-btn-hover-color:var(--white-color);
+  --bs-btn-hover-color: var(--white-color);
   --bs-btn-bg: var(--secondary-color);
   --bs-btn-hover-bg: var(--primary-color);
   --bs-btn-hover-border-color: var(--primary-color);
   --bs-btn-active-color: var(--white-color);
   --bs-btn-active-bg: var(--primary-color);
-  --bs-btn-active-border-color:  var(--primary-color);
+  --bs-btn-active-border-color: var(--primary-color);
 }
 
 .btn-outline-primary {
   --bs-btn-color: var(--black-color);
   --bs-btn-border-color: var(--black-color);
-  --bs-btn-hover-color:var(--primary-color);
+  --bs-btn-hover-color: var(--primary-color);
   --bs-btn-hover-bg: transparent;
   --bs-btn-hover-border-color: var(--primary-color);
   --bs-btn-active-color: var(--primary-color);
   --bs-btn-active-bg: transparent;
-  --bs-btn-active-border-color:  var(--primary-color);
+  --bs-btn-active-border-color: var(--primary-color);
 }
 
 .pt-10 {
@@ -213,4 +217,24 @@
 
 .fs-50 {
   font-size: 50px;
+}
+
+@media screen and (max-width: 425px) {
+  .heading-text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .body-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .btn-w-350 {
+    width: 250px;
+  }
+
+  .fs-24 {
+    font-size: 18px;
+  }
 }

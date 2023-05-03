@@ -9,7 +9,7 @@ export const Howworks = () => {
                     <div className="row justify-content-center">
                         <div className="col-lg-6 text-center">
                             <p className="heading-text">How it Works?</p>
-                            <p className="">
+                            <p className="body-text">
                                 ALFAGENIX is a series of ONLINE PROGRAMS designed to cover and
                                 treat several aspects of your health in order to regain your
                                 well-being and achieve better long-lasting results. Discover a

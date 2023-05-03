@@ -60,7 +60,7 @@ export const Health = () => {
             <section className="middle-section">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-lg-6 p-0">
+                        <div className="col-lg-6 p-0 d-none d-lg-block">
                             <div className="health-image">
                                 <img
                                     src="/src/assets/health-image.png"

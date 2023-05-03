@@ -67,7 +67,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className="col-lg-4 col-md-6 col-12 footer_third-col order-2 order-lg-3">
+                        <div className="col-lg-4 col-md-6 col-12 footer_third-col order-2 order-lg-3 pt-4 pt-lg-0 px-0">
                             <p className="">
                                 <a href="" className="footer-ptp">
                                     PRIVACY NOTICE
