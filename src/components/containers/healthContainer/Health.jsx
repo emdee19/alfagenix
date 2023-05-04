@@ -75,6 +75,7 @@ export const Health = () => {
                                         required
                                     />
                                 </div>
+
                                 <div className="col-md-6 pt-50 pt-md-0">
                                     <input
                                         type="text"
@@ -84,11 +85,16 @@ export const Health = () => {
                                         required
                                     />
                                 </div>
+                                
                                 <div className="col-12 pt-50">
                                     <select id="inputState" className="form-select">
-                                        <option value="">CHOOSE YOUR TEST KIT</option>
+                                        <option value="" hidden>CHOOSE YOUR TEST KIT</option>
+                                        <option value="">TEST KIT 1</option>
+                                        <option value="">TEST KIT 2</option>
+                                        <option value="">TEST KIT 3</option>
                                     </select>
                                 </div>
+
                                 <div className="col-12 pt-50">
                                     <input
                                         type="text"
@@ -97,6 +103,7 @@ export const Health = () => {
                                         placeholder="PHONE NUMBER"
                                     />
                                 </div>
+
                                 <div className="col-12 pt-50">
                                     <input
                                         type="text"
@@ -105,6 +112,7 @@ export const Health = () => {
                                         placeholder="EMAIL ADDRESS"
                                     />
                                 </div>
+
                                 <div className="col-12 text-center pt-50">
                                     <button
                                         type="submit"
