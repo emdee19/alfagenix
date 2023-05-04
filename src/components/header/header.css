@@ -1,3 +1,9 @@
+.header-section {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
 .header-section .header-right-side ul li .active {
     transition: all .3s ease-in-out;
 }

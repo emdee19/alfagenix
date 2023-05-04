@@ -87,8 +87,8 @@
 .btn-outline-primary {
   --bs-btn-color: var(--black-color);
   --bs-btn-border-color: var(--black-color);
-  --bs-btn-hover-color: var(--primary-color);
-  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-color: var(--white-color);
+  --bs-btn-hover-bg: var(--primary-color);
   --bs-btn-hover-border-color: var(--primary-color);
   --bs-btn-active-color: var(--primary-color);
   --bs-btn-active-bg: transparent;

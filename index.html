@@ -29,23 +29,13 @@
 
     <script>
       $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 50) {
+        if ($(window).scrollTop() > 0) {
           $(".navbar").addClass("bg-dark");
+          $(".nav-header").addClass("bg-white")
         } else {
           $(".navbar").removeClass("bg-dark");
         }
       });
-
-      // var video = document.querySelector("video");
-      // var overlay = document.querySelector(".overlay");
-
-      // overlay.addEventListener("click", function () {
-      //   if (video.paused) {
-      //     video.play();
-      //   } else {
-      //     video.pause();
-      //   }
-      // });
     </script>
   </body>
 </html>

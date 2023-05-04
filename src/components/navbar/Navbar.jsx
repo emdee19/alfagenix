@@ -4,7 +4,7 @@ import "./navbar.css";
 export const Navbar = () => {
     return (
         <>
-            <section className="navbar-section sticky-top">
+            <section className="navbar-section">
                 <nav className="navbar navbar-expand-lg">
                     <div className="container custom-navbar-container">
                         <button

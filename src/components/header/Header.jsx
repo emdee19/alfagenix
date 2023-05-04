@@ -1,11 +1,13 @@
 import "./header.css";
 import logo from "/src/assets/header-logo.png"
+import { Navbar } from '../navbar/Navbar'
 
 export const Header = () => {
+
     return (
         <>
             <header className="header-section">
-                <nav className="navbar navbar-expand-lg">
+                <nav className="navbar nav-header navbar-expand-lg bg-white">
                     <div className="container">
                         <a className="navbar-brand" href="#">
                             <img src={logo} alt="" />
@@ -28,6 +30,7 @@ export const Header = () => {
                         </div>
                     </div>
                 </nav>
+                <Navbar />
             </header>
         </>
     );
