@@ -64,7 +64,9 @@
 
 @media screen and (max-width: 991px) {
     .personalized-section .card-side .text-card {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/src/assets/personalized/personalized-bg.png);
+        --bg-img: url(/src/assets/personalized/personalized-bg.png);
+        
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--bg-img);
         background-size: cover;
         background-position: center;
         color: var(--white-color);

@@ -45,17 +45,7 @@ export const Navbar = () => {
                                     <ul className="dropdown-menu sub-dropdown">
                                         <li>
                                             <a className="dropdown-item" href="#">
-                                                Action
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="#">
-                                                Another action
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="#">
-                                                Something else here
+                                                Treatment Pricing
                                             </a>
                                         </li>
                                     </ul>
@@ -73,17 +63,7 @@ export const Navbar = () => {
                                     <ul className="dropdown-menu sub-dropdown">
                                         <li>
                                             <a className="dropdown-item" href="#">
-                                                Action
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="#">
-                                                Another action
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="#">
-                                                Something else here
+                                                Treatment Pricing
                                             </a>
                                         </li>
                                     </ul>
@@ -101,17 +81,7 @@ export const Navbar = () => {
                                     <ul className="dropdown-menu sub-dropdown">
                                         <li>
                                             <a className="dropdown-item" href="#">
-                                                Action
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="#">
-                                                Another action
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item" href="#">
-                                                Something else here
+                                                Treatment Pricing
                                             </a>
                                         </li>
                                     </ul>
@@ -129,17 +99,27 @@ export const Navbar = () => {
                                     <ul className="dropdown-menu sub-dropdown">
                                         <li>
                                             <a className="dropdown-item" href="#">
-                                                Action
+                                                Fatigue Treatment
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item" href="#">
-                                                Another action
+                                                Immune Treatment
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item" href="#">
-                                                Something else here
+                                                Nutrient Treatment
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a className="dropdown-item" href="#">
+                                                Sleep Treatment
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a className="dropdown-item" href="#">
+                                                Weight Treatment
                                             </a>
                                         </li>
                                     </ul>

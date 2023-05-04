@@ -5,7 +5,6 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 const images = [
     "/src/assets/personalized/personalized-bg.png",
     "/src/assets/personalized/personalized-bg2.png",
-    "/src/assets/personalized/personalized-bg.png",
 ];
 const cards = [
     {
@@ -19,12 +18,6 @@ const cards = [
         subheading: "Male & Female",
         description:
             "The Hormone Trio provides a baseline assessment of estradiol, progesterone and testosterone..",
-    },
-    {
-        heading: "Sexual Health",
-        subheading: "Male & Female",
-        description:
-            "The Hormone Trio provides a baseline assessment of estradiol, progesterone and testosterone...",
     },
 ];
 
@@ -50,13 +43,13 @@ export const Personalized = () => {
                     <p className="heading-text">Choose Your Personalized Test Kit</p>
                     <div className="row justify-content-center">
                         <div className="col-lg-6 pt-30">
-                            <div className="image-side d-none d-lg-block ">
+                            <div className="image-side d-none d-lg-block">
                                 <img src={images[position]} className="img-fluid" alt="" />
                             </div>
                         </div>
 
                         <div className="col-lg-6 my-auto card-side">
-                            <div className="text-card text-center">
+                            <div className="text-card text-center" style={{'--bg-img':`url(${images[position]})`}}>
                                 <p className="heading-text mb-0 lh-36">
                                     {cards[position].heading}
                                 </p>
@@ -99,7 +92,7 @@ export const Personalized = () => {
                                     <p className="mb-0 heading-text fs-24 lh-24 text-center">
                                         Dr. Faride Ramos, M.D
                                     </p>
-                                    <p className="heading-text fs-16 lh-24 text-center">
+                                    <p className="body-text fs-16 lh-24 text-center">
                                         AlfaGenix Creator & CEO
                                     </p>
                                     <p className="body-text text-justify pt-2">
@@ -133,7 +126,7 @@ export const Personalized = () => {
                                     <p className="mb-0 heading-text fs-24 lh-24 text-center">
                                         Dr. Ali Ghods, M.D
                                     </p>
-                                    <p className="heading-text fs-16 lh-24 text-center">
+                                    <p className="body-text fs-16 lh-24 text-center">
                                         AlfaGenix Chief Medical Officer
                                     </p>
                                     <p className="body-text text-justify pt-2">

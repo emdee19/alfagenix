@@ -1,6 +1,10 @@
 .navbar-section .navbar {
-    --bs-navbar-nav-link-padding-x: 12px;
+    --bs-navbar-nav-link-padding-x: 10px;
     background: linear-gradient(rgb(0 0 0 / .4), transparent)
+}
+
+.navbar-section .navbar-nav .nav-link {
+    text-shadow: 2px 2px var(--black-color);
 }
 
 .navbar-section .navbar-toggler {

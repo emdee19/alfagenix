@@ -60,17 +60,11 @@ export const Health = () => {
             <section className="middle-section">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-lg-6 p-0 d-none d-lg-block">
-                            <div className="health-image">
-                                <img
-                                    src="/src/assets/health-image.png"
-                                    className="img-fluid pt-10"
-                                    alt=""
-                                />
-                            </div>
+                        <div className="col-lg-6 p-0 d-none d-lg-block health-image">
+                            {/* image in bg */}
                         </div>
 
-                        <div className="col-lg-4 form-container ms-lg-4">
+                        <div className="col-xl-4 col-lg-5 form-container ms-lg-4">
                             <form className="row g-3">
                                 <div className="col-md-6">
                                     <input
