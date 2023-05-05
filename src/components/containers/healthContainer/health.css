@@ -109,6 +109,10 @@ input:-webkit-autofill:active {
         border-bottom: 1px solid var(--white-color);
         color: var(--white-color);
     }
+
+    .middle-section .form-container  option {
+        background: var(--lightbg-color);
+    }
 }
 
 @media screen and (max-width: 425px) {

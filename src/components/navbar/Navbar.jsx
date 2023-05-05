@@ -1,7 +1,15 @@
+import { useState } from "react";
 import "./navbar.css";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 
 export const Navbar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    function handleMenuClick() {
+        setIsMenuOpen(!isMenuOpen);
+    }
+
     return (
         <>
             <section className="navbar-section">
@@ -9,6 +17,7 @@ export const Navbar = () => {
                     <div className="container custom-navbar-container">
                         <button
                             className="navbar-toggler ms-auto"
+                            onClick={handleMenuClick}
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarScroll"
@@ -16,7 +25,7 @@ export const Navbar = () => {
                             aria-expanded="false"
                             aria-label="Toggle navigation"
                         >
-                            <span className="navbar-toggler-icon"></span>
+                            <span className="">{isMenuOpen ? <FaTimes /> : <FaBars />}</span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarScroll">
                             <ul
@@ -140,7 +149,7 @@ export const Navbar = () => {
                                     </a>
                                 </li>
                                 <li className="nav-item d-flex d-lg-none">
-                                    <a className="nav-link" aria-current="page" href="#">
+                                    <a className="nav-link phone-number" aria-current="page" href="#">
                                         Call: 1800 996 0610
                                     </a>
                                     <a className="nav-link ms-5 ms-lg-0" href="#">

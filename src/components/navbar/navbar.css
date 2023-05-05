@@ -9,7 +9,7 @@
 
 .navbar-section .navbar-toggler {
     box-shadow: none;
-    border: none; 
+    border: none;
 }
 
 .navbar-section .navbar-nav {
@@ -43,7 +43,7 @@
     .navbar-section .navbar .navbar-toggler {
         position: absolute;
         top: -54px;
-        right: 26px;
+        right: 130px;
     }
 
     .navbar-section .navbar-nav {
@@ -69,5 +69,23 @@
     .navbar-section .navbar-nav .dropdown .dropdown-menu.sub-dropdown {
         position: absolute;
         background: var(--primary-color);
+    }
+}
+
+@media screen and (width <=768px) {
+    .navbar-section .navbar .navbar-toggler {
+        right: 20px;
+    }
+}
+
+@media screen and (width <=425px) {
+    .navbar-section .navbar .navbar-toggler {
+        right: 0;
+    }
+}
+
+@media screen and (width <=375px) {
+    .navbar-section .navbar-nav .nav-link.phone-number {
+        font-size: 11px;
     }
 }
