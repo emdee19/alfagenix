@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -25,12 +24,12 @@ export const Navbar = () => {
                             aria-expanded="false"
                             aria-label="Toggle navigation"
                         >
-                            <span className="">{isMenuOpen ? <FaTimes /> : <FaBars />}</span>
+                            <span className="toggler-icons">
+                                {isMenuOpen ? <FaTimes /> : <FaBars className="close-icon" />}
+                            </span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarScroll">
-                            <ul
-                                className="navbar-nav navbar-nav-scroll flex-wrap"
-                            >
+                            <ul className="navbar-nav navbar-nav-scroll flex-wrap">
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="#">
                                         How it Works
@@ -149,11 +148,18 @@ export const Navbar = () => {
                                     </a>
                                 </li>
                                 <li className="nav-item d-flex d-lg-none">
-                                    <a className="nav-link phone-number" aria-current="page" href="#">
+                                    <a
+                                        className="nav-link phone-number"
+                                        aria-current="page"
+                                        href="#"
+                                    >
                                         Call: 1800 996 0610
                                     </a>
                                     <a className="nav-link ms-5 ms-lg-0" href="#">
-                                        <button className="btn btn-secondary btn-w-128" type="submit">
+                                        <button
+                                            className="btn btn-secondary btn-w-128"
+                                            type="submit"
+                                        >
                                             Quiz
                                         </button>
                                     </a>
