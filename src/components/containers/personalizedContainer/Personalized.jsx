@@ -9,8 +9,8 @@ import {
 } from "./index";
 
 const images = [
-    { personalized_image1 },
-    { personalized_image2 }
+    personalized_image1,
+    personalized_image2
 ];
 const cards = [
     {
