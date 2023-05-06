@@ -1,10 +1,16 @@
 import { useState } from "react";
 import "./personalized.css";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import {
+    personalized_image1,
+    personalized_image2,
+    faride_image,
+    ghods_image,
+} from "./index";
 
 const images = [
-    "/src/assets/personalized/personalized-bg.png",
-    "/src/assets/personalized/personalized-bg2.png",
+    { personalized_image1 },
+    { personalized_image2 }
 ];
 const cards = [
     {
@@ -17,7 +23,7 @@ const cards = [
         heading: "Hormone Replacement",
         subheading: "Male & Female",
         description:
-            "The Hormone Trio provides a baseline assessment of estradiol, progesterone and testosterone..",
+            "The Hormone Trio provides a baseline assessment of estradiol, progesterone and testosterone.",
     },
 ];
 
@@ -26,13 +32,13 @@ export const Personalized = () => {
 
     const handleLeftArrowClick = () => {
         setPosition((prevPosition) =>
-            prevPosition === 0 ? images.length - 1 : prevPosition - 1
+            prevPosition === 0 ? cards.length - 1 : prevPosition - 1
         );
     };
 
     const handleRightArrowClick = () => {
         setPosition((prevPosition) =>
-            prevPosition === images.length - 1 ? 0 : prevPosition + 1
+            prevPosition === cards.length - 1 ? 0 : prevPosition + 1
         );
     };
 
@@ -49,7 +55,10 @@ export const Personalized = () => {
                         </div>
 
                         <div className="col-lg-6 my-auto card-side">
-                            <div className="text-card text-center" style={{'--bg-img':`url(${images[position]})`}}>
+                            <div
+                                className="text-card text-center"
+                                style={{ "--bg-img": `url(${images[position]})` }}
+                            >
                                 <p className="heading-text mb-0 lh-36">
                                     {cards[position].heading}
                                 </p>
@@ -82,11 +91,7 @@ export const Personalized = () => {
                         <div className="row px-5">
                             <div className="col-lg-4 col-md-6 col-12 order-2 order-lg-1 pt-3 pt-md-0">
                                 <div className="left_side-image px-4">
-                                    <img
-                                        src="/src/assets/personalized/faride-image.png"
-                                        className="img-fliud w-100"
-                                        alt=""
-                                    />
+                                    <img src={faride_image} className="img-fliud w-100" alt="" />
                                 </div>
                                 <div className="card-description pt-40">
                                     <p className="mb-0 heading-text fs-24 lh-24 text-center">
@@ -116,11 +121,7 @@ export const Personalized = () => {
 
                             <div className="col-lg-4 col-md-6 col-12 order-3 order-lg-3 pt-5 pt-md-0">
                                 <div className="right_side-image px-4">
-                                    <img
-                                        src="/src/assets/personalized/ghods-image.png"
-                                        className="img-fliud w-100"
-                                        alt=""
-                                    />
+                                    <img src={ghods_image} className="img-fliud w-100" alt="" />
                                 </div>
                                 <div className="card-description pt-40">
                                     <p className="mb-0 heading-text fs-24 lh-24 text-center">

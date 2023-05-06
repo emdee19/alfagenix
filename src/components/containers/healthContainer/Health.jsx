@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./health.css";
 import { IoMdPlay } from "react-icons/io";
+import video from "/src/assets/video.mp4"
 
 export const Health = () => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -132,7 +133,7 @@ export const Health = () => {
                     <div className="row justify-content-center">
                         <div className="col-xl-9 position-relative">
                             <video
-                                src="/src/assets/video.mp4"
+                                src={video}
                                 className="w-100"
                                 ref={videoRef}
                                 onClick={togglePlay}

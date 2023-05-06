@@ -1,11 +1,12 @@
 import "./hero.css";
+import video from "/src/assets/video.mp4"
 
 export const Hero = () => {
   return (
     <>
       <section className="hero-section">
         <video autoPlay loop muted>
-          <source src="/src/assets/video.mp4" type="video/mp4" />
+          <source src={video} type="video/mp4" />
         </video>
         <div className="container hero-container">
           <div className="row justify-content-center">

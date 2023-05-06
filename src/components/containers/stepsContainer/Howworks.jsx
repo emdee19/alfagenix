@@ -1,5 +1,6 @@
 import { Card } from "./Card";
 import "./howWorks.css";
+import { card_image1, card_image2, card_image3 } from "./index"
 
 export const Howworks = () => {
     return (
@@ -34,7 +35,7 @@ export const Howworks = () => {
                             <div className="col-lg-4 col-md-6">
                                 <div className="step-1">
                                     <Card
-                                        image="/src/assets/card-images/card-image-1.png"
+                                        image={card_image1}
                                         alt="step 1"
                                         title="Step 1"
                                         description="Order your Test Kit or become
@@ -47,7 +48,7 @@ export const Howworks = () => {
                             <div className="col-lg-4 col-md-6">
                                 <div className="step-2">
                                     <Card
-                                        image="/src/assets/card-images/card-image-2.png"
+                                        image={card_image2}
                                         alt="step 2"
                                         title="Step 2"
                                         description="Get an Online Consultation with one
@@ -60,7 +61,7 @@ export const Howworks = () => {
                             <div className="col-lg-4 col-12">
                                 <div className="step-3">
                                     <Card
-                                        image="/src/assets/card-images/card-image-3.png"
+                                        image={card_image3}
                                         alt="step 3"
                                         title="Step 3"
                                         description="Get personalized treatment
