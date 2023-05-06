@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'gilroy-regular';
-  src: url(assets/fonts/Gilroy-Regular.ttf) format("truetype");
+  src: url(./assets/fonts/Gilroy-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'gilroy-medium';
-  src: url(assets/fonts/Gilroy-Medium.ttf) format("truetype");
+  src: url(./assets/fonts/Gilroy-Medium.ttf) format("truetype");
 }
 
 body {

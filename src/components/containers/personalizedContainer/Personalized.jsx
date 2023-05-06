@@ -32,13 +32,13 @@ export const Personalized = () => {
 
     const handleLeftArrowClick = () => {
         setPosition((prevPosition) =>
-            prevPosition === 0 ? cards.length - 1 : prevPosition - 1
+            prevPosition === 0 ? images.length - 1 : prevPosition - 1
         );
     };
 
     const handleRightArrowClick = () => {
         setPosition((prevPosition) =>
-            prevPosition === cards.length - 1 ? 0 : prevPosition + 1
+            prevPosition === images.length - 1 ? 0 : prevPosition + 1
         );
     };
 
