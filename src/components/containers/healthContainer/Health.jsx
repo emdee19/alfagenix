@@ -1,44 +1,7 @@
-import { useEffect, useRef, useState } from "react";
 import "./health.css";
-import { IoMdPlay } from "react-icons/io";
-import video from "/src/assets/video.mp4"
+import video from "/src/assets/video.mp4";
 
 export const Health = () => {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const [showPlayButton, setShowPlayButton] = useState(true);
-    const videoRef = useRef(null);
-
-    const togglePlay = () => {
-        if (isPlaying) {
-            videoRef.current.pause();
-        } else {
-            videoRef.current.play();
-        }
-        setIsPlaying(!isPlaying);
-        setShowPlayButton(false);
-    };
-
-    useEffect(() => {
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5,
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.target === videoRef.current) {
-                    if (entry.isIntersecting) {
-                        videoRef.current.play();
-                    } else {
-                        videoRef.current.pause();
-                    }
-                }
-            });
-        }, options);
-
-        observer.observe(videoRef.current);
-    }, []);
 
     return (
         <>
@@ -86,10 +49,12 @@ export const Health = () => {
                                         required
                                     />
                                 </div>
-                                
+
                                 <div className="col-12 pt-50">
                                     <select id="inputState" className="form-select">
-                                        <option value="" hidden>CHOOSE YOUR TEST KIT</option>
+                                        <option value="" hidden>
+                                            CHOOSE YOUR TEST KIT
+                                        </option>
                                         <option value="">TEST KIT 1</option>
                                         <option value="">TEST KIT 2</option>
                                         <option value="">TEST KIT 3</option>
@@ -133,28 +98,10 @@ export const Health = () => {
                     <div className="row justify-content-center">
                         <div className="col-xl-9 position-relative">
                             <video
+                                controls
                                 src={video}
                                 className="w-100"
-                                ref={videoRef}
-                                onClick={togglePlay}
-                                onPause={() => {
-                                    setIsPlaying(false);
-                                    setShowPlayButton(true);
-                                }}
-                                onPlay={() => {
-                                    setIsPlaying(true);
-                                    setShowPlayButton(false);
-                                }}
-                                onEnded={() => {
-                                    setIsPlaying(false);
-                                    setShowPlayButton(true);
-                                }}
                             />
-                            {showPlayButton && (
-                                <div className="play-pause-button" onClick={togglePlay}>
-                                    <IoMdPlay />
-                                </div>
-                            )}
                         </div>
 
                         <div className="col-xl-5 text-center">
