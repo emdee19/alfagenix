@@ -48,7 +48,7 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
     .personalized-section .text-card {
-        margin-top: 55px;
+        margin-top: 33px;
     }
 
     .personalized-section .card-icons {
@@ -57,9 +57,9 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .personalized-section .text-card {
-        margin-top: 65px;
-        padding: 40px 0;
+    .personalized-section .card-side .text-card {
+        margin-top: 0;
+        padding: 80px 40px;
     }
 
     .personalized-section .card-icons {
@@ -103,4 +103,14 @@
         padding: 80px 50px;
     }
 
+}
+
+@media screen and (width <=375px) {
+    .personalized-section .card-side .second-card {
+        padding: 80px 10px;
+    }
+    
+    .personalized-section .second-card  .text_card-btn {
+        margin-top: 100px;
+    }
 }
