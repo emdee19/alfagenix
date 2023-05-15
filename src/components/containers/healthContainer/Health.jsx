@@ -51,7 +51,7 @@ export const Health = () => {
                                 </div>
 
                                 <div className="col-12 pt-50">
-                                    <select id="inputState" className="form-select">
+                                    <select id="inputState" className="form-select" required>
                                         <option value="" hidden>
                                             CHOOSE YOUR TEST KIT
                                         </option>
@@ -63,10 +63,11 @@ export const Health = () => {
 
                                 <div className="col-12 pt-50">
                                     <input
-                                        type="text"
+                                        type="number"
                                         className="form-control"
                                         id="inputAddress2"
                                         placeholder="PHONE NUMBER"
+                                        required
                                     />
                                 </div>
 
@@ -76,6 +77,7 @@ export const Health = () => {
                                         className="form-control"
                                         id="inputAddress2"
                                         placeholder="EMAIL ADDRESS"
+                                        required
                                     />
                                 </div>
 
@@ -114,9 +116,11 @@ export const Health = () => {
                                 experts standing by to help you reach your goals!
                             </p>
                             <div className="bottom-section_btn pt-30">
-                                <button className="btn btn-outline-primary btn-w-350 p-2">
-                                    Get Personalized Assessment
-                                </button>
+                                <a href="#">
+                                    <button className="btn btn-outline-primary btn-w-350 p-2">
+                                        Get Personalized Assessment
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>

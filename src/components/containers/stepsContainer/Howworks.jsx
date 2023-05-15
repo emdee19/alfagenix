@@ -1,6 +1,6 @@
 import { Card } from "./Card";
 import "./howWorks.css";
-import { card_image1, card_image2, card_image3 } from "./index"
+import { card_image1, card_image2, card_image3 } from "./index";
 
 export const Howworks = () => {
     return (
@@ -17,7 +17,11 @@ export const Howworks = () => {
                                 complete, integrative, and personalized approach to your health.
                             </p>
                             <div className="works-btn">
-                                <button className="btn btn-outline-primary btn-w-250 p-2">Learn More</button>
+                                <a href="#">
+                                    <button className="btn btn-outline-primary btn-w-250 p-2">
+                                        Learn More
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -25,8 +29,8 @@ export const Howworks = () => {
                     <div className="how_works-bottom-section">
                         <div className="row justify-content-center">
                             <div className="col-lg-7">
-                                <p className="text-center heading-text">Regain Control & Reach Your Optimal Health
-                                    In Three Easy Steps
+                                <p className="text-center heading-text">
+                                    Regain Control & Reach Your Optimal Health In Three Easy Steps
                                 </p>
                             </div>
                         </div>

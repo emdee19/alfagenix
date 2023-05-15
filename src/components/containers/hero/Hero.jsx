@@ -25,9 +25,11 @@ export const Hero = () => {
             </div>
           </div>
           <div className="text-center mt-5">
-            <button className="btn btn-primary hero-btn mt-5 btn-w-250 p-2">
-              Get Started!
-            </button>
+            <a href="#">
+              <button className="btn btn-primary hero-btn mt-5 btn-w-250 p-2">
+                Get Started!
+              </button>
+            </a>
           </div>
         </div>
       </section>

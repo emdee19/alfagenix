@@ -15,7 +15,7 @@ export const Header = () => {
                         <div className="header-right-side" id="navbarTogglerDemo03">
                             <ul className="navbar-nav align-items-center d-none d-lg-flex">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="#">
+                                    <a className="nav-link active" aria-current="page" href="tel:18009960610">
                                         Call: 1800 996 0610
                                     </a>
                                 </li>

@@ -8,10 +8,7 @@ import {
     ghods_image,
 } from "./index";
 
-const images = [
-    personalized_image1,
-    personalized_image2
-];
+const images = [personalized_image1, personalized_image2];
 const cards = [
     {
         heading: "Sexual Health",
@@ -23,7 +20,7 @@ const cards = [
         heading: "Hormone Replacement",
         subheading: "Male & Female",
         description:
-            "The Hormone Trio provides a baseline assessment of estradiol, progesterone and testosterone.",
+            "The Saliva Profile I measures levels of estrogen (E2), progesterone, testosterone, DHEA-S, PSA (only males), and cortisol upon waking. It can be used to determine hormone excesses and deficiencies as well as to monitor hormone therapy.",
     },
 ];
 
@@ -67,7 +64,9 @@ export const Personalized = () => {
                                 </p>
                                 <p className="pt-30">{cards[position].description}</p>
                                 <div className="text_card-btn">
-                                    <button className="btn">Get Started!</button>
+                                    <a href="#">
+                                        <button className="btn">Get Started!</button>
+                                    </a>
                                 </div>
                             </div>
                             <div className="card-icons d-flex justify-content-center pt-4">

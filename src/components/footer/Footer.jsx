@@ -1,7 +1,6 @@
 import "./footer.css";
 import logo from "/src/assets/header-logo.png";
-import { BsFacebook, BsTwitter } from "react-icons/bs";
-import { FaLinkedinIn } from "react-icons/fa";
+import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 import { MdLocationOn, MdPermPhoneMsg, MdEmail } from "react-icons/md";
 
 const Footer = () => {
@@ -16,20 +15,21 @@ const Footer = () => {
                                 <button className="btn btn-primary btn-w-250 p-2">
                                     Learn More
                                 </button>
-                                <br />
-                                <button className="btn btn-secondary btn-w-250 p-2 mt-3">
-                                    Call Now!
-                                </button>
+                                <a href="tel:18009960610">
+                                    <button className="btn btn-secondary btn-w-250 p-2 mt-3">
+                                        Call Now!
+                                    </button>
+                                </a>
                             </div>
                             <div className="footer_social-icons mt-4">
-                                <a href="#" className="ms-2 pb-1">
+                                <a href="https://www.facebook.com/AlfaGenix-108422631603738" className="ms-2 pb-1" title="Facebook" target="_blank">
                                     <BsFacebook className="icons" />
                                 </a>
-                                <a href="#" className="ms-2 pb-1">
-                                    <BsTwitter className="icons" />
+                                <a href="https://www.instagram.com/alfagenix/" className="ms-2 pb-1" title="Instagram" target="_blank">
+                                    <BsInstagram className="icons" />
                                 </a>
-                                <a href="#" className="ms-2 pb-1">
-                                    <FaLinkedinIn className="icons" />
+                                <a href="https://www.youtube.com/channel/UC5PNpx5CP9fQnzPcNInTR8g" className="ms-2 pb-1" title="Youtube" target="_blank">
+                                    <BsYoutube className="icons" />
                                 </a>
                             </div>
                             <p className="pt-4">
@@ -41,68 +41,68 @@ const Footer = () => {
                             <h4 className="text-uppercase">Quick Links</h4>
                             <ul>
                                 <li>
-                                    <a href="">Meet The Doctors</a>
+                                    <a href="#">Meet The Doctors</a>
                                 </li>
                                 <li>
-                                    <a href="">How It Works</a>
+                                    <a href="#">How It Works</a>
                                 </li>
                                 <li>
-                                    <a href="">Natural Supplements</a>
+                                    <a href="#">Natural Supplements</a>
                                 </li>
                                 <li>
-                                    <a href="">Hormone Optimization</a>
+                                    <a href="#">Hormone Optimization</a>
                                 </li>
                                 <li>
-                                    <a href="">Men’s Sexual Health</a>
+                                    <a href="#">Men’s Sexual Health</a>
                                 </li>
                                 <li>
-                                    <a href="">Women’s Sexual Health</a>
+                                    <a href="#">Women’s Sexual Health</a>
                                 </li>
                                 <li>
-                                    <a href="">FAQs</a>
+                                    <a href="#">FAQs</a>
                                 </li>
                                 <li>
-                                    <a href="">Contact Us</a>
+                                    <a href="#">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="col-lg-4 col-md-6 col-12 footer_third-col order-2 order-lg-3 pt-4 pt-lg-0 px-0">
                             <p className="">
-                                <a href="" className="footer-ptp">
+                                <a href="#" className="footer-ptp">
                                     PRIVACY NOTICE
                                 </a>
                             </p>
                             <p className="pt-3">
-                                <a href="" className="footer-ptp">
+                                <a href="#" className="footer-ptp">
                                     TERMS AND CONDITIONS
                                 </a>
                             </p>
                             <p className="pt-3">
-                                <a href="" className="footer-ptp">
+                                <a href="#" className="footer-ptp">
                                     PRIVACY POLICY
                                 </a>
                             </p>
-                            <p className="pt-3 text-break">
+                            {/* <p className="pt-3 text-break">
                                 <a href="" className="d-flex">
                                     <MdLocationOn className="info-icons" />
                                     <span className="ms-3">
                                         Address: Lorem Ipsum Dolor Sit Amet Dummy Text here.
                                     </span>
                                 </a>
-                            </p>
+                            </p> */}
                             <p className="pt-2">
-                                <a href="" className="d-flex">
+                                <a href="tel:18009960610" className="d-flex">
                                     <MdPermPhoneMsg className="info-icons" />
-                                    <span className="ms-3">Phone: +123 456 78</span>
+                                    <span className="ms-3">Phone: 1800 996 0610</span>
                                 </a>
                             </p>
-                            <p className="pt-2">
+                            {/* <p className="pt-2">
                                 <a href="" className="d-flex">
                                     <MdEmail className="info-icons" />
                                     <span className="ms-3">Email: info@example.com</span>
                                 </a>
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>
