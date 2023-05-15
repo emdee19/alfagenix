@@ -10,6 +10,10 @@
     height: 540px;
 }
 
+.personalized-section .card-side .second-card {
+    padding: 80px 118px;
+}
+
 .personalized-section .text_card-btn {
     margin-top: 115px;
 }
@@ -17,7 +21,7 @@
 .personalized-section .text_card-btn .btn {
     border-bottom: 2px solid var(--primary-color);
     border-radius: 0;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .personalized-section .text_card-btn .btn:hover {
@@ -35,7 +39,7 @@
 }
 
 .personalized_bottom-section img {
-    background: #F7F7F7;
+    background: #f7f7f7;
 }
 
 .personalized-section .card-icons {
@@ -66,8 +70,9 @@
 @media screen and (max-width: 991px) {
     .personalized-section .card-side .text-card {
         --bg-img: url(/src/assets/personalized/personalized-bg.png);
-        
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--bg-img);
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            var(--bg-img);
         background-size: cover;
         background-position: center;
         color: var(--white-color);

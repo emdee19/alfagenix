@@ -53,7 +53,7 @@ export const Personalized = () => {
 
                         <div className="col-lg-6 my-auto card-side">
                             <div
-                                className="text-card text-center"
+                                className={`text-card text-center ${position === 1 ? "second-card" : ""}`}
                                 style={{ "--bg-img": `url(${images[position]})` }}
                             >
                                 <p className="heading-text mb-0 lh-36">
@@ -96,7 +96,7 @@ export const Personalized = () => {
                                     <p className="mb-0 heading-text fs-24 lh-24 text-center">
                                         Dr. Faride Ramos, M.D
                                     </p>
-                                    <p className="body-text fs-16 lh-24 text-center">
+                                    <p className="body-text fs-16 lh-32 text-center">
                                         AlfaGenix Creator & CEO
                                     </p>
                                     <p className="body-text text-justify pt-2">
@@ -126,7 +126,7 @@ export const Personalized = () => {
                                     <p className="mb-0 heading-text fs-24 lh-24 text-center">
                                         Dr. Ali Ghods, M.D
                                     </p>
-                                    <p className="body-text fs-16 lh-24 text-center">
+                                    <p className="body-text fs-16 lh-32 text-center">
                                         AlfaGenix Chief Medical Officer
                                     </p>
                                     <p className="body-text text-justify pt-2">
