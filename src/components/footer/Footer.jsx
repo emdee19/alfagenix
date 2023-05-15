@@ -16,7 +16,7 @@ const Footer = () => {
                                     Learn More
                                 </button>
                                 <a href="tel:18009960610">
-                                    <button className="btn btn-secondary btn-w-250 p-2 mt-3">
+                                    <button className="btn btn-secondary btn-w-250 p-2 mt-lg-3">
                                         Call Now!
                                     </button>
                                 </a>
@@ -87,20 +87,20 @@ const Footer = () => {
                                 <a href="" className="d-flex">
                                     <MdLocationOn className="info-icons" />
                                     <span className="ms-3">
-                                        Address: Lorem Ipsum Dolor Sit Amet Dummy Text here.
+                                        Lorem Ipsum Dolor Sit Amet Dummy Text here.
                                     </span>
                                 </a>
                             </p> */}
                             <p className="pt-2">
                                 <a href="tel:18009960610" className="d-flex">
                                     <MdPermPhoneMsg className="info-icons" />
-                                    <span className="ms-3">Phone: 1800 996 0610</span>
+                                    <span className="ms-3">1800 996 0610</span>
                                 </a>
                             </p>
                             {/* <p className="pt-2">
                                 <a href="" className="d-flex">
                                     <MdEmail className="info-icons" />
-                                    <span className="ms-3">Email: info@example.com</span>
+                                    <span className="ms-3">info@example.com</span>
                                 </a>
                             </p> */}
                         </div>

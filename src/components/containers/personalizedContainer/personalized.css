@@ -94,8 +94,13 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 575px) {
     .personalized_bottom-section {
         padding-top: 0px;
     }
+
+    .personalized-section .card-side .second-card {
+        padding: 80px 50px;
+    }
+
 }
